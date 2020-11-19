@@ -1,0 +1,71 @@
+textarea {
+  width: 100rpx;
+  padding: 5rpx;
+}
+.text_left{
+  text-indent: 2em;
+  text-align: left;
+}
+.text_right{
+  text-indent: 0em;
+  text-align: right;
+}
+
+.textarea-wrp {
+  padding: 0rpx;
+  background-color: #fff;
+}
+
+.page-section{
+  width: 100%;
+}
+
+.title_postion{
+  display: flex; 
+  justify-content: center;
+}
+
+.title_view{
+  font-size: 20px;
+  font-weight: bold;/*加粗*/
+  background: linear-gradient(to right, red, blue,green);/*左右渐变*/
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.text-box{
+  border-radius:5%;
+  border-style: solid;
+  border-color:rgba(228, 231, 231, 0.589);
+  background:rgba(241, 240, 240, 0.863)
+}
+
+.label{
+  width: 90%;
+  border-radius:5%;
+  border-style: solid;
+  border-color:rgba(216, 214, 214, 0.945); 
+}
+
+.page-section-title{
+  font-size: 15px;
+  font-weight: bold;/*加粗*/
+}
+
+.page-section-title-im{
+  font-size: 15px;
+  font-weight: bold;/*加粗*/
+  color: red;
+}
+
+.btn1{
+   width: 80%;
+   margin-top: 130rpx;
+   background-color: rgb(106,0,95);
+   color: white;
+   border-radius: 98rpx;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+}

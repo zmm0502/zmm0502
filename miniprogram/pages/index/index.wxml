@@ -1,0 +1,81 @@
+<view class="page-body">
+  <view class="page-section">
+    <view class="title_postion">
+      <view class="title_view"> 沙棘产品消费和产业发展调查</view>
+    </view>
+  </view>
+
+  <view class="page-section">
+    <textarea bindblur="bindTextAreaBlur" auto-height />
+    <view class="text-box" scroll-y="true" scroll-top="{{scrollTop}}">
+        <text>\n</text>
+        <view class="text_left"> 沙棘作为列入《中国药典》的药食两用植物，是蒙族、藏族、维族和汉族用于治疗多种疾病的习用药。沙棘既是治理水土流失、保护生态的尖兵植物，也是带动贫困地区农民增收扶贫植物。沙棘是含有400多种营养成分的超级水果，由于产业规模尚小，消费者认知度不高，中国沙棘这个独特的宝藏尚未充分挖掘，带动贫困地区农民脱贫的潜力也未充分发挥。为推动沙棘健康产业快速发展，我们启动了该项专题研究，诚挚邀请您作答。您的思考和填写都是为国家脱贫攻坚和绿水青山的一份贡献。\n</view>
+        <view class="text_left">本研究为公益性研究，研究报告将与参与调研的行业同仁共享，共同推动沙棘产业发展，服务人类健康。前500份有效问卷填写者可获得价值300元左右的沙棘礼品一份。\n</view> 
+        <text>\n</text>
+        <text>\n</text>
+        <view class="text_right">国际沙棘协会(中国)企业委员会\n</view> 
+        <view class="text_right">中国农业科学院农业资源与农业区划研究所\n</view> 
+        <view class="text_right">特色与品牌农业研究课题组\n</view>
+        <text>\n</text>
+      </view>
+  </view>
+
+    <view class="page-section page-section-gap">
+      <text>\n</text>
+      <text>\n</text>
+      <view class="page-section-title">
+        <text class="page-section-title-im">*</text> 
+        <text class="cls3-a">1 您的身份</text> 
+      </view>
+        <radio-group class="group" bindchange="identyRadioChange">
+          <view class="label" wx:for="{{identyItems}}">
+            <radio id="{{item.name}}" value="{{item.name}}" checked="{{item.checked}}"></radio>
+          <label class="label-1-text" for="{{item.name}}"><text>{{item.name}}</text></label>
+        </view>
+      
+      </radio-group>
+    </view>
+ 
+    <view class="page-section page-section-gap">
+      <view class="page-section-title">
+        <text class="page-section-title-im">*</text> 
+        <text class="cls3-a">2 性别</text>  
+      </view>
+        <radio-group class="group" bindchange="sexRadioChange">
+          <view class="label" wx:for="{{sexItems}}">
+            <radio id="{{item.name}}" value="{{item.name}}" checked="{{item.checked}}"></radio>
+          <label class="label-2-text" for="{{item.name}}"><text>{{item.name}}</text></label>
+        </view>
+      </radio-group>
+    </view>
+
+    <view class="page-section page-section-gap">
+      <view class="page-section-title">
+        <text class="page-section-title-im">*</text> 
+        <text class="cls3-a">3 您通过哪些渠道了解过沙棘和沙棘产品</text> 
+      </view>
+      <checkbox-group class="group" bindchange="checkboxChange">
+        <view class="label" wx:for="{{checkboxItems}}">
+          <label>
+            <checkbox value="{{item.name}}" checked="{{item.checked}}"></checkbox>
+            <text class="label-3-text">{{item.name}}</text>
+          </label>
+        </view>
+      </checkbox-group>
+    </view>
+
+    <view class="page-section">
+    <view class="weui-cells_title">
+      <text class="page-section-title-im">*</text> 
+        <text class="cls3-a">4 请依次填写收货人、电话和地址</text> 
+    </view>
+        <view class="weui-cell weui-cell_input">
+          <input class="label" auto-focus bindinput="bindTelephoneInput" placeholder="请填写收获人、联系方式和电话"/>
+        </view>
+    </view>
+
+    <view class="button-sp-area">
+      <button class="btn1" bindtap="submit"> 提交 </button>
+    </view>    
+
+</view>
